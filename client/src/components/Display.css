@@ -1,0 +1,102 @@
+.file-list {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows files to wrap to the next line if there's not enough space */
+    gap: 16px; /* Adds space between files */
+    justify-content: flex-start; /* Aligns items to the left */
+    padding: 16px; /* Optional: Adds some padding to the container */
+  }
+  
+  .file-item {
+    display: flex;
+    flex-direction: column; /* Arranges elements vertically */
+    align-items: center;
+    max-width: 150px; /* Adjust the width of each item */
+    margin: 8px 0; /* Adds vertical spacing between rows */
+  }
+  
+  .image-preview {
+    width: 100%; /* Ensures images fit within the container */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    object-fit: cover; /* Maintains the aspect ratio of the image */
+    max-height: 150px; /* Adjust image height */
+    margin-bottom: 8px; /* Adds spacing below the image */
+  }
+  
+  .file-preview {
+    font-size: 15px; /* Adjusts the text size */
+    text-align: center;
+    word-wrap: break-word; /* Ensures text stays within the box */
+    padding: 20px;
+    padding-left: 0.1px;
+    padding-right: 5px;
+    margin-left: 50px;
+    background-color: #f9f9f9; /* Light background for documents */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%; /* Ensures consistent width with images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+  }
+  
+  .delete-button {
+    margin-top: 8px; /* Adds space above the button */
+    padding: 6px 12px; /* Adjusts button padding */
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .delete-button:hover {
+    background-color: #b4200ddf; /* Darker red on hover */
+  }
+  
+  a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color */
+  }
+  
+  a:hover {
+    opacity: 0.8; /* Subtle hover effect on links */
+  }
+  
+
+.center {
+    margin: 40px;
+}
+
+.button {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #009ffd, #2a2a72);
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 10px 10px;
+    padding-top: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    cursor: grab;
+}
+
+.button:hover {
+    box-shadow: rgba(245, 74, 1, 0.816) 0 3px 8px;
+}
+
+.address {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 330px;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    background-color: lightblue;
+}
